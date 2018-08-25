@@ -20,4 +20,5 @@ function doIt(){
 function finish(){
 	button.value = "Filter";
 	outputText.value = res;
+	res = "";
 }
