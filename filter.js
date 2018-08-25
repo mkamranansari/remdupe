@@ -3,6 +3,7 @@ let inputText;
 self.onmessage = function(e){
 	inputText = e.data;
 	filter();
+	self.postMessage(1);
 }
 function filter() {
 	for (let i = 0; i < inputText.length; i++) {

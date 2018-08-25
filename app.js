@@ -6,5 +6,9 @@ function doIt(){
 	filterWorker.postMessage(inputText);
 	filterWorker.onmessage = function(e){
 		outputText.value += e.data + "\n";
+		if(e.data == 1){
+			filterWorker.terminate();
+			filterWorker = undefined;
+		} 
 	}
 }
