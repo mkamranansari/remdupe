@@ -14,7 +14,7 @@ function filter() {
 				j--;
 				setTimeout(() => {
 					console.log("interval")
-				}, 20);
+				}, 1);
 			}
 		}
 		self.postMessage(elementi);
