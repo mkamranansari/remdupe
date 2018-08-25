@@ -5,10 +5,11 @@ function doIt(){
 		inputText = document.querySelector("#inputTextArea").value.toLowerCase().split("\n")
 	filterWorker.postMessage(inputText);
 	filterWorker.onmessage = function(e){
-		outputText.value += e.data + "\n";
 		if(e.data == 1){
 			filterWorker.terminate();
 			filterWorker = undefined;
+			return;
 		} 
+		outputText.value += e.data + "\n";
 	}
 }

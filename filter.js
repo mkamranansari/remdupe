@@ -12,6 +12,9 @@ function filter() {
 			if (i !== j && elementi === inputText[j]) {
 				inputText.splice(j, 1);
 				j--;
+				setTimeout(() => {
+					console.log("interval")
+				}, 20);
 			}
 		}
 		self.postMessage(elementi);
