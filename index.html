@@ -9,7 +9,8 @@
 			outline: 0;
 		}
 		body {
-			width: 1000px;
+			min-width: 320px;
+			max-width: 900px;
 			background-color: black;
 			color: white;
 			margin: 20px auto;
@@ -19,10 +20,15 @@
 			text-decoration: none;
 			font-weight: 100;
 		}
+		div{
+			margin: 0 auto;
+			width: 90%;
+		}
 		textarea{
 			font-size: 12pt; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 			width: 100%;
 			border-radius: 10px;
+			box-sizing: border-box;
 			padding: 20px;
 			color: rgb(175, 175, 175);
 			background-color: rgb(26, 26, 26);
@@ -33,7 +39,7 @@
 			background-color: rgb(24, 24, 24)
 		}
 		#submit{
-			width: 250px;
+			width: 200px;
 			height: 70px;
 			display: block;
 			margin: 20px auto;
