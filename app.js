@@ -11,5 +11,6 @@ function doIt(){
 			return;
 		} 
 		outputText.value += e.data + "\n";
+		outputText.scrollTop = outputText.scrollHeight;
 	}
 }
