@@ -2,7 +2,6 @@ let button = document.querySelector("#submit"),
 	outputText = document.querySelector("#outputTextArea"),
 	res = "";
 button.addEventListener("click", doIt);
-button.addEventListener("click", finish);
 function doIt(){
 	button.value = "Filtering";
 	let filterWorker = new Worker("filter.js"),
@@ -12,6 +11,7 @@ function doIt(){
 		if(e.data == 1){
 			filterWorker.terminate();
 			filterWorker = undefined;
+			finish();
 			return;
 		} 
 		res += e.data + "\n";
