@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>RemoveDupe</title>
+	<style>
+		*:focus{
+			outline: 0;
+		}
+		body {
+			width: 800px;
+			margin: 20px auto;
+		}
+		textarea{
+			font-size: 14pt;
+			width: 100%;
+			resize: none;
+			border: 2px solid grey;
+		}
+		#submit{
+			width: 150px;
+			height: 60px;
+			display: block;
+			margin: 20px auto;
+			border: 0;
+			font-size: 18pt; font-family: 'Segoe UI', Tahoma;
+			background-color: black;
+			color: white;
+			
+		}
+	</style>
+</head>
+
+<body>
+	<div>
+		<textarea name="inputText" id="inputTextArea" rows="10"></textarea>
+	</div>
+	<div><input type="submit" id="submit" value="Filter"></div>
+	<div>
+		<textarea name="outputText" id="outputTextArea" rows="10" readonly></textarea>
+	</div>
+</body>
+<script src="app.js"></script>
+
+</html>
